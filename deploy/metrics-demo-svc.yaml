@@ -5,7 +5,7 @@ metadata:
   name: metrics-demo
   namespace: metrics-demo
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 3000
       targetPort: 3000
