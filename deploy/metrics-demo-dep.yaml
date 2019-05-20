@@ -1,0 +1,25 @@
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: metrics-demo
+  namespace: metrics-demo
+  annotations:
+    flux.weave.works/automated: 'true'
+    flux.weave.works/tag.metricsdemo: glob:*
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: metrics-demo
+  template:
+    metadata:
+      labels:
+        app: metrics-demo
+    spec:
+      containers:
+      - name: metricsdemo
+        image: quay.io/brice/metrics-demo:v4-subscription-service
+        ports:
+        - containerPort: 3000
+
