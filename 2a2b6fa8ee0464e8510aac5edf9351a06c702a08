@@ -1,0 +1,1 @@
+{"jobID":"a4110c9e-b13f-9806-9ddd-702c476cc3a5","spec":{"type":"policy","cause":{"Message":"","User":"Mikael Johansson \u003cmik.json@gmail.com\u003e"},"spec":{"metrics-demo:deployment/metrics-demo":{"add":null,"remove":{"automated":"true"}}}},"result":null}
