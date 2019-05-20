@@ -5,7 +5,6 @@ metadata:
   name: metrics-demo
   namespace: metrics-demo
   annotations:
-    flux.weave.works/automated: 'true'
     flux.weave.works/tag.metricsdemo: glob:*
 spec:
   replicas: 4
